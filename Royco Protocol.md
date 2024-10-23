@@ -54,8 +54,7 @@ Royco allows anyone to create a market around any onchain action. Those who wish
 
  The ERC4626i contract's `_claim::ERC4626i`  function fails to process rewards independently for multiple tokens, leading to a situation where the failure to claim one reward token prevents the claiming of other available reward tokens.
 
-**Description:** The `PuppyRaffle::refund` function does not follow CEI (Check,Effects,Interactions) and as a results,enables participants to drain the contract balance.
-
+**Description:** 
 In the current implementation of the `_claim::ERC4626i` function, if the contract lacks sufficient balance for one reward token, it prevents claiming all subsequent reward tokens. This occurs because the function doesn't handle each reward token independently, causing the claim process to fail completely when it encounters an issue with any single token.
 
 ```javascript
