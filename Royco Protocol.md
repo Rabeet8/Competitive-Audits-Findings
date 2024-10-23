@@ -52,9 +52,10 @@ Royco allows anyone to create a market around any onchain action. Those who wish
 
 **Summary:**
 
- The ERC4626i contract's `_claim::ERC4626i`  function fails to process rewards independently for multiple tokens, leading to a situation where the failure to claim one reward token prevents the claiming of other available reward tokens.
+The ERC4626i contract's `_claim::ERC4626i`  function fails to process rewards independently for multiple tokens, leading to a situation where the failure to claim one reward token prevents the claiming of other available reward tokens.
 
 **Description:** 
+
 In the current implementation of the `_claim::ERC4626i` function, if the contract lacks sufficient balance for one reward token, it prevents claiming all subsequent reward tokens. This occurs because the function doesn't handle each reward token independently, causing the claim process to fail completely when it encounters an issue with any single token.
 
 ```javascript
@@ -76,7 +77,9 @@ This vulnerability can result in users being unable to claim rewards they've rig
 
 Add this test case to your ERC4626i.t.sol file.
 
-Objective: Test the behavior of the testIncentivizedVault when it has insufficient balance for one of the reward tokens during a user claim.
+**Objective:**
+
+Test the behavior of the testIncentivizedVault when it has insufficient balance for one of the reward tokens during a user claim.
 
 **Setup:**
 
