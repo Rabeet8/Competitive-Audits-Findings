@@ -30,7 +30,15 @@ Syed Rabeet makes all effort to find as many vulnerabilities in the code in the 
 
 # Protocol Summary
 
-Royco allows anyone to create a market around any onchain action. Those who wish to pay users to execute an onchain action are called "Incentive Providers" (IPs) and offer token or points incentives in exchange for an "Action Provider" (APs) to take some action, be it enter a staking vault, or execute some "recipe" of one or more smart contract interactions, each having their own market types on Royco.
+Royco Protocol allows anyone to create a market around any onchain transaction (or series of transactions). Using Royco:
+
+1)Incentive Providers may create intents to offer incentives to users to perform the transaction(s).
+
+2) Users may create intents to complete the transaction(s) and/or negotiate for more incentives.
+
+When these intents satisfy each other, the onchain transaction(s) execute atomically alongside the distribution of incentives. Royco Protocol is entirely non-custodial, trustless, and permissionless. It is also capital-efficient, allowing participants to create many intents with the same assets.
+
+IAMs can be used to find efficient pricing for any onchain action, including depositing, staking, lending, voting, minting an NFT, etc.
 
 
 # Executive Summary
