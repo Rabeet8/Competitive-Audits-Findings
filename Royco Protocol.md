@@ -42,7 +42,7 @@ Royco allows anyone to create a market around any onchain action. Those who wish
 | High     | 1                      |
 | Medium   | 0                      |
 | Low      | 0                      |
-| Info     | 8                      |
+| Info     | 0                      |
 | Total    | 0                      |
 
 # Findings
